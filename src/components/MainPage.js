@@ -12,6 +12,7 @@ export const MainPage = () => {
             setPhotos(response.data);
         }
         getPhotos();
+
     }, []);
 
     return (
@@ -25,7 +26,7 @@ export const MainPage = () => {
                     <th>View_count</th>
                 </tr>
                 { photos.map((row) => (
-                    <tr>
+                    <tr key={ row.id }>
                         <td>{ row.caption }</td>
                         <td>{ row.description }</td>
                         <td>{ row.view_count }</td>
