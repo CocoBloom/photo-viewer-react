@@ -10,6 +10,10 @@ const apiService = {
 
     deletePhoto: (photoID) =>
         Axios.delete(`${URL}/photo/${photoID}`)
+            .catch((error) => error.message),
+
+    savePhoto: (newPhoto) =>
+        Axios.post(`${URL}/photo`, newPhoto)
             .catch((error) => error.message)
 
 }
