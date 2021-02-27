@@ -5,9 +5,11 @@ const TableHeader = () => {
 
     return (
         <React.Fragment>
+            <th></th>
+            <th>Made by</th>
             <th>Caption</th>
-            <th>Description</th>
             <th>Views</th>
+
         </React.Fragment>
     )
 }
