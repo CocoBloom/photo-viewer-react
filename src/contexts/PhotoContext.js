@@ -11,7 +11,6 @@ export const PhotoProvider = (props) => {
         async function getPhotos() {
             const response = await apiService.getPhotos();
             setPhotos(response.data);
-            console.log(photos);
         }
         getPhotos();
 

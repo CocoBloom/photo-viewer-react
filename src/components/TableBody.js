@@ -11,7 +11,6 @@ const TableBody = (props) => {
     const photoID = photo.id;
     const [photos,setPhotos] = useContext(PhotoContext);
 
-
     const editPhoto = () => {
         console.log("edit foto ", photoID);
     }
