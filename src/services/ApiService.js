@@ -3,9 +3,15 @@ import Axios from 'axios';
 const URL = 'http://localhost:8080';
 
 const apiService = {
-    getPhotos: (user) =>
-        Axios.get(`${URL}/photo`, user)
-            .catch((error) => error.response)
+
+    getPhotos: () =>
+        Axios.get(`${URL}/photo`)
+            .catch((error) => error.response),
+
+    deletePhoto: (photoID) =>
+        Axios.delete(`${URL}/photo/${photoID}`)
+            .catch((error) => error.message)
+
 }
 
 export default apiService;
