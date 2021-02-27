@@ -1,0 +1,17 @@
+.photo-form-container {
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  padding: 50px;
+  float: right;
+  margin-right: 5%;
+  width: 30%;
+
+  .photo-form {
+    padding: 50px;
+    background-color: #b4b7c7;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
+  }
+}
