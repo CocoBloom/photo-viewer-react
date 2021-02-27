@@ -1,5 +1,7 @@
 import React from 'react';
 import "./TableDesign.scss";
+import apiService from "../services/ApiService";
+import Axios from "axios";
 
 const TableBody = (props) => {
 
@@ -10,10 +12,8 @@ const TableBody = (props) => {
         console.log("edit foto ", photoID);
     }
 
-    const deletePhoto = () => {
-        console.log("delete foto");
-
-
+    const deletePhoto = async () => {
+        const response = await apiService.deletePhoto(photoID);
     }
 
     if (photo !== null){
