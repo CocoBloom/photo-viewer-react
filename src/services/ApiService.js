@@ -14,7 +14,11 @@ const apiService = {
 
     savePhoto: (newPhoto) =>
         Axios.post(`${URL}/photo`, newPhoto)
-            .catch((error) => error.message)
+            .catch((error) => error.message),
+
+    getPhotoByID: (id) =>
+        Axios.get(`${URL}/photo/${id}`)
+            .catch((error) => error.response),
 
 }
 
