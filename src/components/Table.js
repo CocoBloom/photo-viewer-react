@@ -18,8 +18,8 @@ const Table = () => {
                 <tr><TableHeader/></tr>
             </thead>
             <tbody>
-                {photos.map((row) => (
-                    <tr key={row.id}><TableBody  photo={row}/></tr>
+                {photos.map((row, index) => (
+                    <tr key={row.id}><TableBody index={index} photo={row}/></tr>
                 ))}
             </tbody>
         </TableBootstrap>
