@@ -13,7 +13,8 @@ const PhotoForm = () => {
 
     const [photos,setPhotos] = useContext(PhotoContext);
 
-    const savePhoto = async () => {
+    const savePhoto = async (e) => {
+        e.preventDefault();
         const photo_credit_input = photo_credit.current.value;
         const caption_input = caption.current.value;
 
@@ -29,6 +30,8 @@ const PhotoForm = () => {
                 photo['id'] = response.data.newPhotoID.toString();
                 photo['view_counter'] = "0";
                 setPhotos((oldPhotos) => [...oldPhotos, photo]);
+                photo_credit.current.value = '';
+                caption.current.value = '';
             }
         }
     }
