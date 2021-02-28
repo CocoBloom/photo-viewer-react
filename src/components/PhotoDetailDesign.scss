@@ -5,13 +5,14 @@
   margin-right: 2%;
   width: 30%;
   float: left;
-  border: 5px solid darkblue;
+  border: 5px solid darkgray;
   text-align: left !important;
   padding: 30px;
   height: 50%;
   border-radius: 10px;
   background-color: rgba(219, 243, 196, 1);
   box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
+  color: darkslategray;
 
   h5 {
       padding: 10px;
@@ -23,7 +24,7 @@
     padding: 20px;
     background-color: rgba(219, 243, 196, 1);
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid darkgray;
     box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
   }
 }
@@ -31,18 +32,18 @@
   height: 100px;
   padding: 20px;
   h1 {
-
     float: left;
+    font-size: 40px;
   }
   a {
     float: right;
     text-decoration: none;
-    color: green;
     font-size: 30px;
     background-color: darkseagreen;
     border-radius: 5%;
+    color: darkslategray;
     padding: 10px;
-    border: 2px solid green;
+    border: 2px solid darkgray;
     box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.56);
   }
 }

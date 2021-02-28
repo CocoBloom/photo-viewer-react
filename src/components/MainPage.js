@@ -6,9 +6,11 @@ const MainPage = () => {
 
     return (
         <React.Fragment>
-            <h1>Welcome in PhotoLand!</h1>
-            <Table/>
-            <PhotoForm/>
+            <div className="main">
+                <h1>Welcome in PhotoLand!</h1>
+                <Table/>
+                <PhotoForm/>
+            </div>
         </React.Fragment>
     )
 }

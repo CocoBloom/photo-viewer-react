@@ -1,4 +1,12 @@
+body {
+  background-color: lightgoldenrodyellow;
+
+}
 .App {
   text-align: center;
-  padding: 30px;
+  padding: 50px;
+}
+
+h1 {
+ font-size: 60px;
 }

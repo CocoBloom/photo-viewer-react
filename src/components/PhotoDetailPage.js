@@ -14,7 +14,6 @@ const PhotoDetailPage = () => {
             setPhoto(response.data[0]);
             await apiService.increaseViewCounter(id);
         }
-
         getPhoto(id);
     }, [id]);
 
@@ -25,8 +24,8 @@ const PhotoDetailPage = () => {
                 <a href="/">Back</a>
             </div>
             <div className="detail-form">
-                <h4>Made by:</h4>
-                <h5>{ photo.photo_credit }</h5>
+                <h3>Made by:</h3>
+                <h5>{ photo.photo_credit }</h5><br/>
                 <h3>Caption:</h3>
                 <h5>{ photo.caption }</h5>
             </div>

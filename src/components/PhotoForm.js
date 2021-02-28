@@ -10,10 +10,9 @@ const PhotoForm = () => {
 
     const [photos,setPhotos] = useContext(PhotoContext);
     const [editFields,setEditFields] = useContext(EditContext);
-
-    const [errorMessage, setErrorMessage] = useState("");
     const [editedPhotoID, setEditedPhotoID] = useState(null);
     const [edit, setEdit] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
     let caption = useRef(null);
     let photo_credit = useRef(null);
@@ -83,11 +82,13 @@ const PhotoForm = () => {
     return (
         <div className="photo-form-container">
             <Form className="photo-form">
+                <h3>New Photo details:</h3>
                 <Form.Group controlId="formPhotoCredit">
                     <Form.Label>Photo credit:</Form.Label>
                     <Form.Control
+                        className="control"
                         type="text"
-                        placeholder="Photo credit of Picture"
+                        placeholder="Made by"
                         autoComplete="off"
                         ref={photo_credit}
                     />
@@ -95,6 +96,7 @@ const PhotoForm = () => {
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Caption</Form.Label>
                     <Form.Control
+                        className="control"
                         type="text"
                         as="textarea"
                         rows={5}

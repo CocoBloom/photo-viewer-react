@@ -4,15 +4,23 @@
   height: 90vh;
   padding: 50px;
   float: right;
+  margin-top: 5%;
   margin-right: 2%;
   width: 30%;
+  font-size: 25px;
 
   .photo-form {
     padding: 50px;
     background-color: #b4b7c7;
-    border-radius: 10px;
     background-color: rgba(219, 243, 196, 1);
     box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
+  }
 
+  .control {
+    background-color: rgba(16, 17, 13, 0.1);
+    border: 2px solid darkgray;
+  }
+  h3 {
+    font-size: 35px;
   }
 }
