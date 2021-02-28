@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="delete blank lines">
+    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="add PhotoDetailDesign.scss">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhotoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhotoFormDesign.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoFormDesign.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ApiService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ApiService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/editPhoto" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../4. Module - Advence/PHP/2th week/Breakdown-Circulation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,6 +68,7 @@
       <workItem from="1614297863100" duration="4161000" />
       <workItem from="1614328750120" duration="21000" />
       <workItem from="1614368866652" duration="960000" />
+      <workItem from="1614534138196" duration="5246000" />
     </task>
     <task id="LOCAL-00001" summary="fix getPhotos()">
       <created>1614305827061</created>
@@ -389,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614489706706</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add PhotoDetailDesign.scss">
+      <created>1614490182773</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1614490182773</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +432,6 @@
     <MESSAGE value="add getPhotoByID()" />
     <MESSAGE value="refactor App.css" />
     <MESSAGE value="delete margin-right" />
-    <MESSAGE value="add PhotoDetailDesign.scss" />
     <MESSAGE value="add PhotoDetailPage.js" />
     <MESSAGE value="change the key of the rows and add index attribute" />
     <MESSAGE value="implement viewPhotoDetails()" />
@@ -433,6 +449,7 @@
     <MESSAGE value="changePhotoDetail design" />
     <MESSAGE value="add more text for PhotoDetailPage.js" />
     <MESSAGE value="delete blank lines" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete blank lines" />
+    <MESSAGE value="add PhotoDetailDesign.scss" />
+    <option name="LAST_COMMIT_MESSAGE" value="add PhotoDetailDesign.scss" />
   </component>
 </project>

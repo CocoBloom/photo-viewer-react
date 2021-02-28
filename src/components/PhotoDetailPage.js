@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import apiService from "../services/ApiService";
 import "./PhotoDetailDesign.scss";
 
@@ -14,8 +14,8 @@ const PhotoDetailPage = () => {
             setPhoto(response.data[0]);
             await apiService.increaseViewCounter(id);
         }
-        getPhoto(id);
 
+        getPhoto(id);
     }, [id]);
 
     return (

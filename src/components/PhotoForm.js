@@ -1,26 +1,28 @@
 import React, {useContext, useRef, useState} from 'react';
+import { PhotoContext } from "../contexts/PhotoContext";
+import { EditContext } from "../contexts/EditContext";
+import apiService from "../services/ApiService";
 import { Button, Form } from "react-bootstrap";
 import "./PhotoFormDesign.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import apiService from "../services/ApiService";
-import { PhotoContext } from "../contexts/PhotoContext";
-import { EditContext } from "../contexts/EditContext";
 
 const PhotoForm = () => {
 
-    const [errorMessage, setErrorMessage] = useState("");
     const [photos,setPhotos] = useContext(PhotoContext);
     const [editFields,setEditFields] = useContext(EditContext);
+
+    const [errorMessage, setErrorMessage] = useState("");
     const [editedPhotoID, setEditedPhotoID] = useState(null);
     const [edit, setEdit] = useState(false);
+
     let caption = useRef(null);
     let photo_credit = useRef(null);
 
     const getEditingFields = async (photoID) => {
         const response = await apiService.getPhotoByID(photoID);
-        setEditedPhotoID(response.data[0]['id']);
         photo_credit.current.value = response.data[0].photo_credit;
         caption.current.value = response.data[0].caption;
+        setEditedPhotoID(photoID);
         setEditFields({edit : false, photo_id : null});
         setEdit(true);
     }
@@ -53,7 +55,7 @@ const PhotoForm = () => {
         if (response.status === 201) {
             photo['view_counter'] = response.data.view_counter;
             let updatedData = photos.map(function (e) {
-                if (parseInt(e.id) === parseInt(photo['id'])) {
+                if (parseInt(e.id) === parseInt(editedPhotoID)) {
                     return photo;
                 } else {
                     return e;

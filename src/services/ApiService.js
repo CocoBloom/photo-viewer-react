@@ -5,7 +5,7 @@ const URL = 'http://localhost:8080';
 const apiService = {
 
     getPhotos: () =>
-        Axios.get(`${URL}/photo`)
+        Axios.get(`${URL}/photo`,  {headers: {'Content-Type': 'application/json'}})
             .catch((error) => error.response),
 
     deletePhoto: (photoID) =>

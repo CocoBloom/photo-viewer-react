@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import "./TableDesign.scss";
-import apiService from "../services/ApiService";
-import { PhotoContext } from '../contexts/PhotoContext';
 import { useHistory } from "react-router-dom";
-import {EditContext} from "../contexts/EditContext";
+import { PhotoContext } from '../contexts/PhotoContext';
+import { EditContext } from "../contexts/EditContext";
+import apiService from "../services/ApiService";
+import "./TableDesign.scss";
+
 
 const TableBody = (props) => {
 
@@ -33,8 +34,8 @@ const TableBody = (props) => {
     return (
         <React.Fragment key={ photo.id }>
             <td>{ index }</td>
-            <td>{ photo.caption }</td>
             <td>{ photo.photo_credit }</td>
+            <td>{ photo.caption }</td>
             <td>{ photo.view_counter }</td>
             <td className="edit" onClick={editPhoto}>Edit</td>
             <td className="delete" onClick={deletePhoto}>Delete</td>
