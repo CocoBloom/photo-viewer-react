@@ -1,19 +1,31 @@
 import React, {useContext, useRef, useState} from 'react';
 import { Button, Form } from "react-bootstrap";
-import "./FormDesign.scss";
+import "./PhotoFormDesign.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import apiService from "../services/ApiService";
 import { PhotoContext } from "../contexts/PhotoContext";
+import { EditContext } from "../contexts/EditContext";
 
 const PhotoForm = () => {
 
     const [errorMessage, setErrorMessage] = useState("");
-    const caption = useRef(null);
-    const photo_credit = useRef(null);
-
     const [photos,setPhotos] = useContext(PhotoContext);
+    const [editFields,setEditFields] = useContext(EditContext);
+    const [editedPhotoID, setEditedPhotoID] = useState(null);
+    const [edit, setEdit] = useState(false);
+    let caption = useRef(null);
+    let photo_credit = useRef(null);
 
-    const savePhoto = async (e) => {
+    const getEditingFields = async (photoID) => {
+        const response = await apiService.getPhotoByID(photoID);
+        setEditedPhotoID(response.data[0]['id']);
+        photo_credit.current.value = response.data[0].photo_credit;
+        caption.current.value = response.data[0].caption;
+        setEditFields({edit : false, photo_id : null});
+        setEdit(true);
+    }
+
+    const saveOrEditPhoto = async (e) => {
         e.preventDefault();
         const photo_credit_input = photo_credit.current.value;
         const caption_input = caption.current.value;
@@ -25,15 +37,45 @@ const PhotoForm = () => {
                 caption : caption_input,
                 photo_credit : photo_credit_input
             };
-            const response = await apiService.savePhoto(photo);
-            if (response.status === 201) {
-                photo['id'] = response.data.newPhotoID.toString();
-                photo['view_counter'] = "0";
-                setPhotos((oldPhotos) => [...oldPhotos, photo]);
-                photo_credit.current.value = '';
-                caption.current.value = '';
+            if (edit) {
+                editPhoto(photo);
+            } else {
+                addNewPhoto(photo);
             }
+            caption.current.value = '';
+            photo_credit.current.value = '';
         }
+    }
+
+    const editPhoto = async (photo) => {
+        photo['id'] = editedPhotoID;
+        const response = await apiService.updatePhoto(editedPhotoID, photo);
+        if (response.status === 201) {
+            photo['view_counter'] = response.data.view_counter;
+            let updatedData = photos.map(function (e) {
+                if (parseInt(e.id) === parseInt(photo['id'])) {
+                    return photo;
+                } else {
+                    return e;
+                }
+            });
+            setPhotos(updatedData);
+            setEdit(false);
+        }
+    }
+
+    const addNewPhoto = async (photo) => {
+        const response = await apiService.savePhoto(photo);
+        if (response.status === 201) {
+            photo['id'] = response.data.newPhotoID.toString();
+            photo['view_counter'] = "0";
+            setPhotos((oldPhotos) => [...oldPhotos, photo]);
+        }
+    }
+
+    if (editFields !== null && editFields!== undefined && editFields.edit) {
+        const photoID = editFields.photo_id;
+        getEditingFields(photoID);
     }
 
     return (
@@ -55,13 +97,13 @@ const PhotoForm = () => {
                         type="text"
                         as="textarea"
                         rows={5}
-                        placeholder="Caption"
                         autoComplete="off"
                         ref={caption}
+                        placeholder="Caption"
                     />
                 </Form.Group>
                 { errorMessage }
-                <Button variant="secondary" type="button" onClick={ savePhoto }>
+                <Button variant="secondary" type="button" onClick={ saveOrEditPhoto }>
                     Save
                 </Button>
             </Form>
