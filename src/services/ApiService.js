@@ -20,6 +20,10 @@ const apiService = {
         Axios.get(`${URL}/photo/${id}`)
             .catch((error) => error.response),
 
+    increaseViewCounter: (id) =>
+        Axios.put(`${URL}/view-counter/${id}`)
+            .catch((error) => error.response)
+
 }
 
 export default apiService;
