@@ -9,8 +9,11 @@
   text-align: left !important;
   padding: 30px;
   height: 50%;
+  border-radius: 10px;
+  background-color: rgba(219, 243, 196, 1);
+  box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
 
-    h5 {
+  h5 {
       padding: 10px;
     }
 
@@ -18,7 +21,7 @@
     margin-top: 5%;
     height: 300px;
     padding: 20px;
-    background-color: #b4b7c7;
+    background-color: rgba(219, 243, 196, 1);
     border-radius: 10px;
     border: 1px solid black;
     box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
@@ -40,5 +43,6 @@
     border-radius: 5%;
     padding: 10px;
     border: 2px solid green;
+    box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.56);
   }
 }

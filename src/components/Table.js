@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
+import { PhotoContext } from '../contexts/PhotoContext';
+import TableBootstrap from 'react-bootstrap/Table';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./TableDesign.scss";
-import TableBootstrap from 'react-bootstrap/Table';
-import { PhotoContext } from '../contexts/PhotoContext';
 
 const Table = () => {
 
