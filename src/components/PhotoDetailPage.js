@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from "react-router-dom";
+import {useHistory, useParams} from "react-router-dom";
 import apiService from "../services/ApiService";
 import "./PhotoDetailDesign.scss";
 
@@ -12,14 +12,16 @@ const PhotoDetailPage = () => {
         async function getPhoto(id) {
             const response = await apiService.getPhotoByID(id);
             setPhoto(response.data[0]);
+            await apiService.increaseViewCounter(id);
         }
         getPhoto(id);
+
     }, []);
 
     return (
         <div className="detail-container">
             <a href="/">Back to Main</a>
-            <h3>Datail of Photo</h3>
+            <h3>Detail of Photo</h3>
             <h5>{ photo.photo_credit }</h5>
             <h5>{ photo.caption }</h5>
         </div>
