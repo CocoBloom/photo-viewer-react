@@ -1,5 +1,4 @@
-import React, {useEffect, useContext, useState} from 'react';
-import apiService from "../services/ApiService";
+import React, { useContext } from 'react';
 import TableHeader from "./TableHeader";
 import TableBody from "./TableBody";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,10 +6,9 @@ import "./TableDesign.scss";
 import TableBootstrap from 'react-bootstrap/Table';
 import { PhotoContext } from '../contexts/PhotoContext';
 
-
 const Table = () => {
 
-    const [photos,setPhotos] = useContext(PhotoContext);
+    const [photos] = useContext(PhotoContext);
 
     return (
         <TableBootstrap striped bordered hover variant="dark" className="table">
