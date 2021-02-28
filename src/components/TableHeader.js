@@ -9,7 +9,6 @@ const TableHeader = () => {
             <th>Made by</th>
             <th>Caption</th>
             <th>Views</th>
-
         </React.Fragment>
     )
 }

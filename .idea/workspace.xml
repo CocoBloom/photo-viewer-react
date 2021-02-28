@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="add idea into .gitignore">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="implement editPhoto()">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PhotoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TableHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableHeader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/mainPage" />
+        <entry key="$PROJECT_DIR$" value="feature/editPhoto" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,7 +42,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/contexts" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +90,287 @@
       <option name="project" value="LOCAL" />
       <updated>1614306299708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add new dependency into package.json">
+      <created>1614393364803</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393364803</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add TableHeader component">
+      <created>1614393389710</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393389710</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add TableDesign.scss">
+      <created>1614393410703</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393410703</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add Tablebody of Table">
+      <created>1614393432684</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393432684</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add the table of photos">
+      <created>1614393455127</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393455127</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add the form of adding photo">
+      <created>1614393473255</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393473255</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add FormDesign.scss">
+      <created>1614393494300</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393494300</updated>
+    </task>
+    <task id="LOCAL-00012" summary="split table into components">
+      <created>1614393523833</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393523833</updated>
+    </task>
+    <task id="LOCAL-00013" summary="import MainPage.js into App.js">
+      <created>1614393577154</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614393577154</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add deletePhoto()">
+      <created>1614424488051</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614424488051</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add deletePhoto() as onClick method">
+      <created>1614424554492</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614424554492</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add PhotoProvider into routing system">
+      <created>1614426159013</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614426159013</updated>
+    </task>
+    <task id="LOCAL-00017" summary="implement PhotoContext.js">
+      <created>1614426185328</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614426185328</updated>
+    </task>
+    <task id="LOCAL-00018" summary="change useEffect() with context">
+      <created>1614426214215</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614426214215</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implement deletePhoto()">
+      <created>1614426243001</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614426243001</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add savePhoto()">
+      <created>1614447987243</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614447987243</updated>
+    </task>
+    <task id="LOCAL-00021" summary="delete console">
+      <created>1614448000370</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448000370</updated>
+    </task>
+    <task id="LOCAL-00022" summary="implement savePhoto onclick method">
+      <created>1614448022462</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448022462</updated>
+    </task>
+    <task id="LOCAL-00023" summary="delete blank line">
+      <created>1614448036257</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448036257</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add new current value of caption and photo_credit fields">
+      <created>1614448381120</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1614448381120</updated>
+    </task>
+    <task id="LOCAL-00025" summary="change column names in TableHeader.js">
+      <created>1614461353516</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461353516</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add view class css">
+      <created>1614461378744</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461378744</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add getPhotoByID()">
+      <created>1614461393110</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461393110</updated>
+    </task>
+    <task id="LOCAL-00028" summary="refactor App.css">
+      <created>1614461409357</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461409357</updated>
+    </task>
+    <task id="LOCAL-00029" summary="refactor App.css">
+      <created>1614461422146</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461422146</updated>
+    </task>
+    <task id="LOCAL-00030" summary="delete margin-right">
+      <created>1614461453806</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461453806</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add PhotoDetailDesign.scss">
+      <created>1614461467030</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461467030</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add PhotoDetailPage.js">
+      <created>1614461478978</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461478978</updated>
+    </task>
+    <task id="LOCAL-00033" summary="change the key of the rows and add index attribute">
+      <created>1614461508531</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461508531</updated>
+    </task>
+    <task id="LOCAL-00034" summary="implement viewPhotoDetails()">
+      <created>1614461553644</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1614461553644</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add increaseViewCounter()">
+      <created>1614471329286</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1614471329286</updated>
+    </task>
+    <task id="LOCAL-00036" summary="put into useEffect increaseViewCounter()">
+      <created>1614471392734</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1614471392734</updated>
+    </task>
+    <task id="LOCAL-00037" summary="delete unused import, add id to useEffect()">
+      <created>1614486896610</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1614486896610</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add updatePhoto()">
+      <created>1614486915492</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1614486915492</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add EditProvider into routing system">
+      <created>1614486938993</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1614486938993</updated>
+    </task>
+    <task id="LOCAL-00040" summary="delete unused imports">
+      <created>1614486966883</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1614486966883</updated>
+    </task>
+    <task id="LOCAL-00041" summary="change PhotoFormDesign.scss">
+      <created>1614486986239</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1614486986239</updated>
+    </task>
+    <task id="LOCAL-00042" summary="implement editPhoto() and addNewPhoto()">
+      <created>1614487022626</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1614487022626</updated>
+    </task>
+    <task id="LOCAL-00043" summary="delete unused method init">
+      <created>1614487050969</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1614487050969</updated>
+    </task>
+    <task id="LOCAL-00044" summary="implement editPhoto()">
+      <created>1614487070347</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1614487070347</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,10 +389,31 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix getPhotos()" />
-    <MESSAGE value="add key for child elementy" />
-    <MESSAGE value="clear" />
-    <MESSAGE value="add idea into .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add idea into .gitignore" />
+    <MESSAGE value="add savePhoto()" />
+    <MESSAGE value="delete console" />
+    <MESSAGE value="implement savePhoto onclick method" />
+    <MESSAGE value="delete blank line" />
+    <MESSAGE value="add new current value of caption and photo_credit fields" />
+    <MESSAGE value="change column names in TableHeader.js" />
+    <MESSAGE value="add view class css" />
+    <MESSAGE value="add getPhotoByID()" />
+    <MESSAGE value="refactor App.css" />
+    <MESSAGE value="delete margin-right" />
+    <MESSAGE value="add PhotoDetailDesign.scss" />
+    <MESSAGE value="add PhotoDetailPage.js" />
+    <MESSAGE value="change the key of the rows and add index attribute" />
+    <MESSAGE value="implement viewPhotoDetails()" />
+    <MESSAGE value="add increaseViewCounter()" />
+    <MESSAGE value="put into useEffect increaseViewCounter()" />
+    <MESSAGE value="delete unused import" />
+    <MESSAGE value="delete unused import, add id to useEffect()" />
+    <MESSAGE value="add updatePhoto()" />
+    <MESSAGE value="add EditProvider into routing system" />
+    <MESSAGE value="delete unused imports" />
+    <MESSAGE value="change PhotoFormDesign.scss" />
+    <MESSAGE value="implement editPhoto() and addNewPhoto()" />
+    <MESSAGE value="delete unused method init" />
+    <MESSAGE value="implement editPhoto()" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement editPhoto()" />
   </component>
 </project>

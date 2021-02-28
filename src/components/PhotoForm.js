@@ -90,7 +90,6 @@ const PhotoForm = () => {
                         ref={photo_credit}
                     />
                 </Form.Group>
-
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Caption</Form.Label>
                     <Form.Control
