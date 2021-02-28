@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {useHistory, useParams} from "react-router-dom";
+import { useParams} from "react-router-dom";
 import apiService from "../services/ApiService";
 import "./PhotoDetailDesign.scss";
 
@@ -16,7 +16,7 @@ const PhotoDetailPage = () => {
         }
         getPhoto(id);
 
-    }, []);
+    }, [id]);
 
     return (
         <div className="detail-container">
