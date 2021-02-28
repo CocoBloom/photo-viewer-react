@@ -3,6 +3,7 @@ import "./TableDesign.scss";
 import apiService from "../services/ApiService";
 import { PhotoContext } from '../contexts/PhotoContext';
 import { useHistory } from "react-router-dom";
+import {EditContext} from "../contexts/EditContext";
 
 const TableBody = (props) => {
 
@@ -11,10 +12,10 @@ const TableBody = (props) => {
     const [photos,setPhotos] = useContext(PhotoContext);
     const index = parseInt(props.index) + 1;
     const history = useHistory();
-
+    const [editFields, setEditFields] = useContext(EditContext);
 
     const editPhoto = () => {
-        console.log("edit foto ", photoID);
+        setEditFields({edit : true, photo_id : photoID});
     }
 
     const deletePhoto = async () => {
