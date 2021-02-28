@@ -22,10 +22,10 @@ const PhotoDetailPage = () => {
         <div className="detail-container">
             <div className="header">
                 <h1>Details of Photo:</h1>
-                <a href="/">Back to Main</a>
+                <a href="/">Back</a>
             </div>
             <div className="detail-form">
-                <h3>Made by:</h3>
+                <h4>Made by:</h4>
                 <h5>{ photo.photo_credit }</h5>
                 <h3>Caption:</h3>
                 <h5>{ photo.caption }</h5>

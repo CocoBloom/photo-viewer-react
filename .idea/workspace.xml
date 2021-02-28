@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="implement editPhoto()">
+    <list default="true" id="376fdb0f-55f7-43bb-9ca8-7c944bd0443a" name="Default Changelist" comment="delete blank lines">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailDesign.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoDetailPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PhotoForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PhotoForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TableHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableHeader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -370,7 +368,28 @@
       <option name="project" value="LOCAL" />
       <updated>1614487070347</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="changePhotoDetail design">
+      <created>1614489660869</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1614489660869</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add more text for PhotoDetailPage.js">
+      <created>1614489685327</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1614489685327</updated>
+    </task>
+    <task id="LOCAL-00047" summary="delete blank lines">
+      <created>1614489706706</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1614489706706</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,9 +408,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add savePhoto()" />
-    <MESSAGE value="delete console" />
-    <MESSAGE value="implement savePhoto onclick method" />
     <MESSAGE value="delete blank line" />
     <MESSAGE value="add new current value of caption and photo_credit fields" />
     <MESSAGE value="change column names in TableHeader.js" />
@@ -414,6 +430,9 @@
     <MESSAGE value="implement editPhoto() and addNewPhoto()" />
     <MESSAGE value="delete unused method init" />
     <MESSAGE value="implement editPhoto()" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement editPhoto()" />
+    <MESSAGE value="changePhotoDetail design" />
+    <MESSAGE value="add more text for PhotoDetailPage.js" />
+    <MESSAGE value="delete blank lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete blank lines" />
   </component>
 </project>

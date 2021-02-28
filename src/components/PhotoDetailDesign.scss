@@ -24,15 +24,21 @@
     box-shadow: 0px 0px 20px 11px rgba(0,0,0,0.56);
   }
 }
-
 .header {
   height: 100px;
-  border: 1px solid black;
   padding: 20px;
   h1 {
+
     float: left;
   }
   a {
     float: right;
+    text-decoration: none;
+    color: green;
+    font-size: 30px;
+    background-color: darkseagreen;
+    border-radius: 5%;
+    padding: 10px;
+    border: 2px solid green;
   }
 }
